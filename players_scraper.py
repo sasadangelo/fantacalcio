@@ -1,4 +1,3 @@
-import ast
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 import requests
@@ -7,20 +6,6 @@ from time import sleep
 from random import randint
 import pandas as pd
 from player import Player
-
-skills = {
-    "Fuoriclasse": 1,
-    "Titolare": 3,
-    "Buona Media": 2,
-    "Goleador": 4,
-    "Assistman": 2,
-    "Piazzati": 2,
-    "Rigorista": 5,
-    "Giovane talento": 2,
-    "Panchinaro": -4,
-    "Falloso": -2,
-    "Outsider": 2,
-}
 
 class PlayersScraper:
     def __init__(self, roles, players_urls_file, players_file, players_excel_file):
@@ -163,7 +148,7 @@ class PlayersScraper:
             print(f"Failed to retrieve data for role: {role}")
             return []
 
-    def __collect_all_player_urls(self):
+    def __download_all_player_urls(self):
         for role in tqdm(self.roles):
             role_players_urls = self.__scrape_players_urls(role)
             self.players_urls.extend(role_players_urls)
@@ -179,8 +164,8 @@ class PlayersScraper:
         with open(self.players_file, "w") as file:
             for player in self.players:
                 players_attributes.append(player.attributes)
-                self.players_attributes_df = pd.DataFrame.from_dict(players_attributes)
-                self.players_attributes_df.to_csv(self.players_file, index=False)
+        self.players_attributes_df = pd.DataFrame.from_dict(players_attributes)
+        self.players_attributes_df.to_csv(self.players_file, index=False)
 
     def __load_existing_players_urls(self):
         if os.path.exists(self.players_urls_file):
@@ -189,79 +174,15 @@ class PlayersScraper:
             return existing_urls
         return set()
 
-    # appeal score =( Fantamedia anno scorso * Partite giocate anno scorso/38 * peso
-    #              + Fantamedia anno corrente * Partite giocate anno corrente/giornata * 100-peso )/ quotazione
-    #              + skills + altri parametri
-    def __calculatePlayersAppealScore(self) -> float:
-        # cleaning
-        for col in self.players_attributes_df.columns:
-            self.players_attributes_df.loc[self.players_attributes_df[col] == "nd", col] = 0
-        print(self.players_attributes_df)
-        res = []
-        playedmax = 1
-        for index, row in self.players_attributes_df.iterrows():
-            if int(row[-1]) > int(playedmax):
-                playedmax = int(row[-1])
-        for index, row in self.players_attributes_df.iterrows():
-            player_appeal_score = 0
-
-            # media pesata fantamedia
-            if int(row[5]) > 0:
-                player_appeal_score += float(row[7]) * int(row[5]) / 38   *20/100 #era row 2
-
-            if not (
-                self.players_attributes_df.columns[2].split(" ")[-1] == self.players_attributes_df.columns[6].split(" ")[-1]
-                and int(row[-1]) > 5
-            ):  # stesso anno
-                player_appeal_score = (
-                    player_appeal_score * float(row[6]) * int(row[-1]) / playedmax *80/100
-                )
-            else:
-                player_appeal_score = float(row[7]) * int(row[5]) / 38
-
-            # media pesata fantamedia * convenienza rispetto alla quotazione * media scorso anno
-            player_appeal_score=player_appeal_score*float(row['Punteggio'])*30/100
-            if float(row[1]) == 0: pt=1
-            else: pt=float(row[1])
-            player_appeal_score = (
-                player_appeal_score / pt * 100 / 40
-            )
-
-            # skills
-            try:
-                valori = ast.literal_eval(row[-9])
-                plus = 0
-                for skill in valori:
-                    plus += skills[skill]
-                player_appeal_score += plus
-            except:
-                pass
-
-            if row["Nuovo acquisto"]:
-                player_appeal_score -= 2
-            if int(row["Buon investimento"]) == 60:
-                player_appeal_score += 3
-            if row["Consigliato prossima giornata"]:
-                player_appeal_score += 1
-            if row["Trend"] == "UP":
-                player_appeal_score += 2
-            if row["Infortunato"]:
-                player_appeal_score -= 1
-            if int(row["Resistenza infortuni"]) > 60:
-                player_appeal_score += 4
-            if int(row["Resistenza infortuni"]) == 60:
-                player_appeal_score += 2
-
-            res.append(player_appeal_score)
-
-        return res
-
     def run(self):
-        existing_urls = self.__load_existing_players_urls()
-        if existing_urls:
-            print(f"Found {len(existing_urls)} existing URLs.")
+        # This piece of code check if the players_urls.txt file exists.
+        # If so, the URLs are loaded in memory otherwise they are downloaded from Fantacalciopedia.com
+        # then they will be ket in memory and sved in the players_urls.txt file.
+        self.players_urls = self.__load_existing_players_urls()
+        if self.players_urls:
+            print(f"Found {len(self.players_urls)} existing URLs.")
         else:
-            self.__collect_all_player_urls()
+            self.__download_all_player_urls()
 
             if self.players_urls:
                 self.__save_players_urls_to_file()
@@ -280,36 +201,3 @@ class PlayersScraper:
                 print(f"New players have been saved to {self.players_file}")
             else:
                 print("No new player to save.")
-
-        self.players_attributes_df["Convenienza"] = self.__calculatePlayersAppealScore()
-
-        # riordino le colonne come piace a me
-        temp = self.players_attributes_df.columns
-        self.players_attributes_df = self.players_attributes_df[
-            [
-                temp[11],
-                temp[0],
-                temp[18],
-                temp[1],
-                temp[21],
-                temp[19],
-                temp[12],
-                temp[20],
-                temp[6],
-                temp[2],
-                temp[5],
-                temp[7],
-                temp[3],
-                temp[4],
-                temp[16],
-                temp[17],
-                temp[8],
-                temp[9],
-                temp[10],
-                temp[13],
-                temp[14],
-                temp[15],
-            ]
-        ]
-        self.players_attributes_df.sort_values(by="Convenienza", ascending=False)
-        self.players_attributes_df.to_excel(self.players_excel_file)

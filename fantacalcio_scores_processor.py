@@ -32,7 +32,7 @@ def process_excel_to_csv(input_file, output_file):
 
     # Replace '6*' with '6' in the 'Voto' column
     if 'Voto' in df.columns:
-        df['Voto'] = df['Voto'].replace('6*', '6')
+        df['Voto'] = df['Voto'].replace('6*', '0')
 
     # Convert columns to numeric types
     numeric_columns = ['Voto', 'Gf', 'Gs', 'Rp', 'Rs', 'Au', 'Amm', 'Esp', 'Ass']
@@ -43,6 +43,7 @@ def process_excel_to_csv(input_file, output_file):
                        3 * df['Gf'] -
                        1 * df['Gs'] +
                        3 * df['Rp'] +
+                       3 * df['Rf'] -
                        3 * df['Rs'] -
                        1 * df['Au'] -
                        0.5 * df['Amm'] -

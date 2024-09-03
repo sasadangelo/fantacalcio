@@ -13,7 +13,7 @@ def process_fantacalcio_stats(stagione, max_giornata):
 
     # Process each match day from 1 to max_giornata
     for giornata in range(1, max_giornata + 1):
-        file_name = f'data/voti_{stagione}_giornata_{giornata}.csv'
+        file_name = f'data/csv/voti_{stagione}_giornata_{giornata}.csv'
         if os.path.exists(file_name):
             # Read the CSV file
             df = pd.read_csv(file_name)
@@ -41,12 +41,15 @@ def process_fantacalcio_stats(stagione, max_giornata):
         Esp=('Esp', 'sum')
     ).reset_index()
 
+    # Round 'Fantamedia' to 2 decimal places
+    stats['Fantamedia'] = stats['Fantamedia'].round(2)
+
     # Calculate FM su Totale Gare
     #total_gare = len(all_data['Gf'].notnull())
     stats['FM_su_Totale_Gare'] = (stats['Fantamedia']  * stats['Presenze'] / max_giornata).round(2)
 
     # Save the summary report to a new CSV file
-    output_file = f'data/stats_{stagione}.csv'
+    output_file = f'data/csv/stats_{stagione}.csv'
     stats.to_csv(output_file, index=False)
     print(f"Statistics successfully saved to {output_file}")
 

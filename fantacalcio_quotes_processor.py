@@ -20,7 +20,6 @@ def process_excel_to_csv(input_file, output_file):
 
     # Drop the specified columns
     df = df.drop(df.columns[columns_to_drop], axis=1)
-    print(df)
 
     # Remove the first useless4 rows
     df = df.iloc[1:]
@@ -33,9 +32,14 @@ def process_excel_to_csv(input_file, output_file):
 
     # Remove rows where all columns are NaN
     df = df.dropna(how='all')
+    # Extract the relevant columns
+    df_corrected = df[['Ruolo', 'Calciatore', 'Squadra', 'FVM']]
+
+    # Reorder the columns
+    df_corrected = df_corrected[['Calciatore', 'Squadra', 'Ruolo', 'FVM']]
 
     # Save the DataFrame to a CSV file
-    df.to_csv(output_file, index=False)
+    df_corrected.to_csv(output_file, index=False)
     print(f"{input_file} successfully converted in a CSV file and saved to {output_file}")
 
 def main():

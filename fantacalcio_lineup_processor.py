@@ -19,7 +19,7 @@ formations = [
 df = pd.read_csv(stats_file)
 
 # Ordinare per fantamedia e poi per presenze in ordine decrescente
-df = df.sort_values(by=['Fantamedia', 'Presenze'], ascending=[False, False])
+df = df.sort_values(by=['Appeal', 'Presenze'], ascending=[False, False])
 
 # Selezionare i giocatori per ruolo, ora ordinati anche per presenze
 portieri = df[df['Ruolo'] == 'P']
@@ -76,9 +76,9 @@ titolari, panchinari = get_best_lineup()
 # Se la formazione è stata trovata, stamparla
 if titolari is not None:
     print("Formazione titolare:")
-    print(titolari[['Calciatore', 'Squadra', 'Ruolo', 'Fantamedia', 'Presenze']])
+    print(titolari[['Calciatore', 'Squadra', 'Ruolo', 'Fantamedia', 'Presenze', 'Appeal']])
 
     print("\nPanchinari:")
-    print(panchinari[['Calciatore', 'Squadra', 'Ruolo', 'Fantamedia', 'Presenze']])
+    print(panchinari[['Calciatore', 'Squadra', 'Ruolo', 'Fantamedia', 'Presenze', 'Appeal']])
 else:
     print("Non è stato possibile formare una squadra valida con i giocatori disponibili.")

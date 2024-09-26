@@ -1,6 +1,6 @@
 # Fantacalcio
 
-Fantacalcio è una serie di scripts Python che utilizzo per giocare a Fantacalcio.
+Fantacalcio è una serie di scripts Python che utilizzo per giocare a Fantacalcio. Questa serie di scripts ti aiuteranno a giocare a Fantacalcio con i tuoi amici sia nella fase dell'Asta che quando dovrai schierare le formazioni.
 
 ## Prerequisiti
 

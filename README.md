@@ -1,27 +1,37 @@
 # Fantacalcio
 
-Fantacalcio è un piccolo python tool ispirato da questo repository per creare una lista di giocatori da scegliere per la Fanta Asta. Questi giocatori sono ordinati per Convenienza che è una metrica calcolata a partire dalle statistiche di ciascun giocatore. Le statistiche sono scaricate da [Fantacalciopedia.com](https://www.fantacalciopedia.com/).
+Fantacalcio è una serie di scripts Python che utilizzo per giocare a Fantacalcio.
 
-## Le statistiche di FantacalcioPedia.com usate
+## Prerequisiti
 
-Per ogni giocatore il tool scarica le seguenti informazioni dal sito [Fantacalciopedia.com](https://www.fantacalciopedia.com/) e li mette nel file [players.csv](https://github.com/sasadangelo/fantacalcio/blob/main/players.csv):
-* **Punteggio**: il punteggio incorpora il trend degli ultimi 3 anni del giocatore e quello relativo al rendimento più recente insieme ad altri vari indicatori dello stato di forma. 
-* **Fantamedia anno 2023-2024**: è la fantamedia del campionato corrente (è ancora presto per avere i dati del 2024/25).
-* **Fantamedia anno 2022-2023**: è la fantamedia del campionato scorso.
-* **Fantamedia anno 2021-2022**: è la fantamedia del campionato di 2 anni fa.
-* **Presenze 2023-2024**: presenza nel campionato corrente.
-* **Fanta Media 2023-2024**: to remove
-* **FM su tot gare 2023-2024**: è il valore (Fantamedia anno 2023-2024/Presenze 2023-2024).
-* **Presenze previste**: le presenze previste nel campionato corrente.
-* **Gol previsti**: gol previsti nel campionato corrente.
-* **Assist previsti**: assist previsti nel campionato corrente.
-* **Ruolo**: Ruolo del giocatore. Valori possibili sono: Portiere, Difensore, Centrocampista, Trequartista, Attaccante.
-* **Skills**: le attitudini del giocatore. Valori possibili sono: Titolare, Buona Media, Falloso, Outsider, Assistman, Piazzati, Goleador, Giovane talento. Questi skills saranno usate nel calcolo dell'appeal del giocatore come bonus o malus.
-* **Buon investimento**: un valore che indica se il giocatore può essere un buon investimento.
-* **Resistenza infortuni**: un valore che indica se il giocatore è predisposto o meno agli infortuni.
-* **Consigliato prossima giornata**: se il giocatore è consigliato nella prossima giornata.
-* **Nuovo acquisto**: se il giocatore è un nuovo acquisto della sua squadra.
-* **Infortunato**: se il giocatore è infortunato.
-* **Squadra**: la squadra dove gioca il calciatore.
-* **Trend**: il trend del giocatore.
-* **Presenze campionato corrente**: presenze campionato corrente.
+Per usare questa serie di script Python hai bisogno:
+1. git
+2. Python 3.x
+
+## Preparazione ambiente esecuzione
+
+Questi sono i passi per preparare l'ambiente di esecuzione:
+
+1. Scarica il repository con il comando `git clone https://github.com/sasadangelo/fantacalcio`.
+2. Prepara il Python Virtual Environment con il comando `python3 -m venv venv`.
+3. Attiva il Python Virtual environment con il comando `source venv/bin/activate`.
+4. Installa le dipendenze con il comando `pip3 install -r requirements.txt`.
+
+## Come aggiornare le statistiche dei giocatori alla fine di ogni Giornata di campionato?
+
+Questi sono i passi da fare alla fine di ogni giornata di campionato:
+
+1. Scarica il file Excel con i voti dal sito [Fantacalcio.it](https://www.fantacalcio.it/voti-fantacalcio-serie-a). Per farlo devi essere loggato al sito. Metti il file scaricato nel folder `data/xlsx`.
+2. Converti il file Excel scaricato al passo 1 nel file `data/csv/voti_2024_25_giornata_N.csv` con il comando `python3 fantacalcio_scores_processor.py --input data/xlsx/Voti_Fantacalcio_Stagione_2024_25_Giornata_N.xlsx --output data/csv/voti_2024_25_giornata_N.csv` dove N è il numero della giornata.
+3. Aggiorna le statistiche dei giocatori con il comando `python3 fantacalcio_stats_processor.py --season 2024_25 --max_day N` dove N è il numero della giornata. Ovviamente sostituisci l'annata della stagione con quella attuale.
+
+## Come preparare la formazione per la prossima giornata di Campionato?
+
+Questi script Python calcolano la migliore formazione per la prossima giornata incrociando la Fantamedia, le Presenza con le Probabili formazioni. Con questi dati verrà calcolato un valore di Appeal del giocatore. Più è alto questo valore è migliore è il suo ranking ad essere schierato. Ricordo che questa procedura andrebbe fatta il giorno prima dell'inizio della giornata o, meglio ancora, qualche ora prima dell'inizio. Il motivo è che la lista dei probabili giocatori che giocheranno sarà più affidabile.
+
+Questi sono i passi da fare per calcolare la formazione da schierare la prossima giornata di campionato:
+
+1. Assicurati di avere il file `team.csv` con i giocatori della tua rosa.
+2. Scarica le probabilità di presenza di ciascun giocatore con il comando `python3 fantacalcio_probable_lineups_processor.py`.
+3. Calcola l'appeal di ciascun calciatore con il comando `python3 fantacalcio_team_processor.py`. Il file `data/csv/team_stats_2024_25.csv` verrà aggiornato.
+4. Calcola la migliore formazione da schierare in base all'appeal dei calciatori con il comando `python3 fantacalcio_lineup_processor.py `.

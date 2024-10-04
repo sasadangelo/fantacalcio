@@ -1,29 +1,361 @@
 Calciatore,Probabilità
+Caprile,0.9
+Di Lorenzo,0.9
+Rrahmani,0.9
+Buongiorno,0.9
+Olivera,0.6
+Zambo Anguissa,0.9
+Lobotka,0.9
+McTominay,0.9
+Politano,0.8
+Lukaku,0.9
+Kvaratskhelia,0.9
+Contini,0.05
+Juan Jesus,0.3
+Mazzocchi,0.55
+Marin R.,0.25
+Spinazzola,0.6
+Gilmour,0.4
+Zerbin,0.2
+Folorunsho,0.35
+Neres,0.6
+Simeone,0.5
+Ngonge,0.25
+Raspadori,0.5
+Audero,0.9
+Van Der Brempt,0.9
+Kempf,0.9
+Dossena,0.9
+Moreno Alb.,0.9
+Sergi Roberto,0.9
+Perrone,0.9
+Strefezza,0.9
+Paz N.,0.9
+Fadera,0.9
+Cutrone,0.9
+Reina,0.05
+Vigorito,0.01
+Iovine,0.4
+Sala M.,0.25
+Goldaniga,0.4
+Engelhardt,0.3
+Baselli,0.5
+Mazzitelli,0.6
+Braunoder,0.3
+Verdi,0.5
+Da Cunha,0.55
+Jasim,0.35
+Gabrielloni,0.25
+Belotti,0.6
+Montipo',0.9
+Tchatchoua,0.9
+Daniliuc,0.85
+Coppola D.,0.9
+Frese,0.9
+Duda,0.6
+Belahyane,0.9
+Rocha Livramento,0.6
+Kastanos,0.9
+Lazovic,0.9
+Tengstedt,0.6
+Perilli,0.05
+Berardi A.,0.01
+Okou,0.2
+Faraoni,0.3
+Ghilardi,0.1
+Magnani,0.6
+Bradaric,0.5
+Dani Silva,0.6
+Cisse' A.,0.3
+Sarr A.,0.5
+Mosquera,0.6
+Lambourde,0.4
+Joronen,0.9
+Idzes,0.85
+Svoboda,0.9
+Candela,0.9
+Zampano,0.9
+Nicolussi Caviglia,0.9
+Ellertsson,0.85
+Haps,0.8
+Oristanio,0.85
+Busio,0.9
+Pohjanpalo,0.9
+Stankovic F.,0.05
+Grandi,0.01
+Bertinato,0.01
+Sverko,0.55
+Schingtienne,0.4
+Sagrado,0.25
+Carboni F.,0.3
+Altare,0.5
+Andersen M.k.,0.6
+Doumbia I.,0.5
+Crnigoj,0.6
+El Haddad,0.3
+Yeboah J.,0.4
+Gytkjaer,0.5
+Raimondo,0.3
+Okoye,0.9
+Giannetti L.,0.9
+Bijol,0.9
+Kabasele,0.9
+Ehizibue,0.9
+Lovric,0.9
+Karlstrom,0.9
+Ekkelenkamp,0.55
+Kamara H.,0.8
+Brenner,0.85
+Lucca,0.9
+Sava,0.05
+Padelli,0.01
+Ebosse,0.3
+Abankwah,0.2
+Palma,0.1
+Toure' I.s.,0.5
+Zemura,0.55
+Rui Modesto,0.3
+Atta,0.35
+Zarraga,0.6
+Bravo,0.5
+Davis K.,0.6
+Pizarro,0.15
+Falcone,0.9
+Guilbert,0.9
+Baschirotto,0.9
+Gaspar K.,0.9
+Gallo,0.9
+Tete Morente,0.85
+Pierret,0.65
+Ramadani,0.9
+Dorgu,0.9
+Rebic,0.6
+Krstovic,0.9
+Fruchtl,0.05
+Samooja,0.01
+Borbei,0.01
+Jean,0.3
+Pelmard,0.2
+Coulibaly L.,0.6
+Rafia,0.5
+Hasa,0.2
+Oudin,0.6
+Marchwinski,0.5
+McJannet,0.15
+Banda,0.2
+Pierotti,0.6
+Burnete,0.1
+Carnesecchi,0.9
+De Roon,0.8
+Hien,0.7
+Kolasinac,0.6
+Bellanova,0.8
+Pasalic,0.7
+Ederson D.s.,0.8
+Zappacosta,0.8
+Samardzic,0.6
+Lookman,0.55
+Retegui,0.9
+Rui Patricio,0.05
+Rossi F.,0.01
+Palestra,0.15
+Godfrey,0.35
+Djimsiti,0.5
+Kossounou,0.5
+Toloi,0.25
+Del Lungo,0.1
+Cuadrado,0.6
+Sulemana I.,0.3
+Zaniolo,0.6
+Vlahovic V.,0.1
+De Ketelaere,0.6
+Gollini,0.9
+De Winter,0.8
+Bani,0.9
+Vasquez,0.9
+Sabelli,0.6
+Thorsby,0.9
+Bohinen,0.9
+Miretti,0.9
+Martin,0.6
+Pinamonti,0.9
+Vitinha O.,0.85
+Leali,0.05
+Sommariva,0.01
+Marcandalli,0.2
+Matturro,0.5
+Vogliacco,0.55
+Norton-Cuffy,0.25
+Zanoli,0.6
+Ahanor,0.5
+Kasa,0.2
+Masini,0.15
+Accornero,0.15
+Ekhator,0.3
+Ankeye,0.55
+Sommer,0.9
+Pavard,0.55
+Acerbi,0.9
+Bastoni,0.8
+Darmian,0.65
+Frattesi,0.9
+Calhanoglu,0.8
+Mkhitaryan,0.65
+Dimarco,0.9
+Martinez L.,0.9
+Thuram,0.9
+Martinez Jo.,0.05
+Di Gennaro,0.01
+Palacios T.,0.15
+De Vrij,0.35
+Dumfries,0.6
+Bisseck,0.5
+Carlos Augusto,0.5
+Asllani,0.35
+Zielinski,0.6
+Correa,0.25
+Taremi,0.6
+Arnautovic,0.35
+Milinkovic-Savic V.,0.9
+Vojvoda,0.9
+Coco,0.9
+Masina,0.9
+Lazaro,0.9
+Tameze,0.55
+Ricci S.,0.9
+Ilic,0.9
+Sosa B.,0.75
+Adams C.,0.55
+Zapata D.,0.9
+Paleari,0.05
+Donnarumma An.,0.01
+Walukiewicz,0.3
+Maripan,0.5
+Dembele' A.,0.25
+Pedersen,0.6
+Bianay Balcot,0.1
+Linetty,0.4
+Gineitis,0.5
+Vlasic,0.55
+Sanabria,0.6
+Karamoh,0.2
+Di Gregorio,0.85
+Danilo,0.85
+Kalulu,0.75
+Gatti,0.9
+Cambiaso,0.9
+Locatelli,0.8
+McKennie,0.6
+Conceicao,0.9
+Koopmeiners,0.6
+Yildiz,0.55
+Vlahovic,0.85
+Perin,0.05
+Pinsoglio,0.01
+Cabal,0.5
+Savona,0.4
+Rouhi,0.2
+Thuram K.,0.6
+Douglas Luiz,0.6
+Fagioli,0.6
+Weah,0.35
+Mbangula,0.5
 Scuffet,0.9
 Zappa,0.9
-Mina,0.9
+Mina,0.85
 Luperto,0.9
-Zortea,0.6
-Deiola,0.85
-Marin,0.9
-Gaetano,0.75
-Augello,0.9
+Obert,0.55
+Marin,0.55
+Makoumbou,0.8
+Zortea,0.9
+Viola,0.6
 Luvumbo,0.9
 Piccoli,0.9
 Sherri,0.05
 Ciocci,0.01
-Obert,0.3
-Palomino,0.35
-Azzi,0.6
-Wieteska,0.2
+Augello,0.6
+Palomino,0.4
+Azzi,0.5
 Adopo,0.6
-Viola,0.4
-Jankto,0.2
-Makoumbou,0.5
-Felici,0.35
-Lapadula,0.6
-Mutandwa,0.3
-Pavoletti,0.5
+Gaetano,0.6
+Prati,0.5
+Deiola,0.4
+Jankto,0.1
+Felici,0.3
+Mutandwa,0.25
+Skorupski,0.7
+Posch,0.8
+Beukema,0.8
+Casale,0.85
+Miranda J.,0.7
+Aebischer,0.8
+Freuler,0.7
+Fabbian,0.7
+Orsolini,0.55
+Castro S.,0.6
+Ndoye,0.6
+Ravaglia F.,0.05
+Bagnolini,0.01
+De Silvestri,0.2
+Erlic,0.4
+Lykogiannis,0.5
+Corazza,0.15
+Holm,0.25
+Pobega,0.3
+Iling Junior,0.6
+Urbanski,0.6
+Karlsson,0.3
+Moro N.,0.4
+Odgaard,0.5
+Dallinga,0.6
+Dominguez B.,0.2
+Suzuki,0.9
+Delprato,0.8
+Balogh,0.9
+Osorio,0.9
+Coulibaly W.,0.55
+Bernabe',0.9
+Hernani,0.9
+Man,0.9
+Sohm,0.6
+Mihaila,0.65
+Bonny,0.9
+Chichizola,0.05
+Corvi,0.01
+Leoni,0.2
+Valenti,0.25
+Valeri,0.6
+Di Chiara,0.1
+Hainaut,0.5
+Keita M.,0.4
+Camara D.,0.25
+Almqvist,0.6
+Cancellieri,0.6
+Charpentier,0.5
+Haj Mohamed,0.4
+Provedel,0.9
+Lazzari,0.85
+Gila,0.55
+Romagnoli,0.9
+Tavares N.,0.9
+Guendouzi,0.8
+Rovella,0.9
+Isaksen,0.85
+Dia,0.9
+Zaccagni,0.9
+Castellanos,0.65
+Mandas,0.05
+Furlanetto,0.01
+Marusic,0.5
+Patric,0.3
+Pellegrini Lu.,0.25
+Gigot,0.25
+Vecino,0.5
+Castrovilli,0.4
+Tchaouna,0.6
+Dele-Bashiru,0.6
+Noslin,0.6
+Pedro,0.3
 Vasquez D.,0.9
 Goglichidze,0.8
 Ismajli,0.9
@@ -32,448 +364,113 @@ Gyasi,0.9
 Grassi,0.9
 Henderson L.,0.85
 Pezzella Giu.,0.9
-Maleh,0.8
-Esposito Se.,0.65
+Anjorin,0.55
+Esposito Se.,0.6
 Colombo,0.9
-Brancolini,0.05
+Seghetti,0.05
+Brancolini,0.01
 Marianucci,0.15
-Sambia,0.3
-Cacace,0.5
-De Sciglio,0.25
-Haas,0.5
-Anjorin,0.6
+Sambia,0.25
+Cacace,0.3
+De Sciglio,0.5
+Haas,0.6
+Maleh,0.4
+Fazzini,0.6
 Solbakken,0.6
-Ekong,0.35
-Pellegri,0.6
-Montipo',0.9
-Daniliuc,0.55
-Coppola D.,0.9
-Dawidowicz,0.9
-Tchatchoua,0.9
-Belahyane,0.9
-Dani Silva,0.9
-Bradaric,0.6
-Rocha Livramento,0.55
-Lazovic,0.9
-Tengstedt,0.9
-Perilli,0.05
-Berardi A.,0.01
-Magnani,0.4
-Okou,0.2
-Faraoni,0.5
-Ghilardi,0.1
-Frese,0.25
-Kastanos,0.6
-Cisse' A.,0.3
-Alidou,0.6
-Sarr A.,0.5
-Mosquera,0.6
-Milinkovic-Savic V.,0.9
-Walukiewicz,0.85
-Coco,0.55
-Masina,0.9
-Lazaro,0.9
-Ricci S.,0.9
-Linetty,0.9
-Ilic,0.9
-Sosa B.,0.6
-Adams C.,0.8
-Zapata D.,0.9
-Paleari,0.05
-Donnarumma An.,0.01
-Dembele' A.,0.2
-Maripan,0.5
-Pedersen,0.6
-Tameze,0.6
-Gineitis,0.5
-Ciammaglichella,0.15
-Sanabria,0.6
-Karamoh,0.3
-Njie,0.1
-Joronen,0.9
-Idzes,0.9
-Svoboda,0.85
-Sverko,0.55
-Candela,0.9
-Andersen M.k.,0.8
-Duncan,0.9
-Zampano,0.85
-Oristanio,0.8
-Busio,0.9
-Pohjanpalo,0.9
-Stankovic F.,0.05
-Grandi,0.01
-Haps,0.15
-Schingtienne,0.4
-Sagrado,0.3
-Altare,0.35
-Carboni F.,0.4
-Ellertsson,0.6
-Crnigoj,0.2
-Doumbia I.,0.55
-El Haddad,0.3
-Yeboah J.,0.6
-Gytkjaer,0.5
-Raimondo,0.5
-Gollini,0.9
-De Winter,0.9
-Vogliacco,0.6
-Vasquez,0.8
-Sabelli,0.9
-Frendrup,0.9
-Badelj,0.9
-Malinovskyi,0.6
-Martin,0.9
-Vitinha O.,0.55
-Pinamonti,0.9
-Leali,0.05
-Sommariva,0.01
-Marcandalli,0.25
-Matturro,0.2
-Bani,0.5
-Thorsby,0.6
-Bohinen,0.55
-Ekhator,0.5
-Accornero,0.15
-Ekuban,0.6
-Di Gregorio,0.9
-Cambiaso,0.6
-Danilo,0.7
-Bremer,0.85
-Cabal,0.85
-Thuram K.,0.85
-Douglas Luiz,0.55
-Gonzalez N.,0.6
-Koopmeiners,0.8
-Yildiz,0.65
-Vlahovic,0.85
-Perin,0.05
-Pinsoglio,0.01
-Gatti,0.5
-Savona,0.35
-Rouhi,0.15
-Kalulu,0.4
-McKennie,0.4
-Adzic,0.2
-Locatelli,0.6
-Fagioli,0.6
-Weah,0.55
-Mbangula,0.55
-Meret,0.9
-Di Lorenzo,0.9
-Rrahmani,0.9
-Buongiorno,0.9
-Mazzocchi,0.8
-Zambo Anguissa,0.8
-Lobotka,0.9
-Spinazzola,0.6
-Politano,0.65
-Kvaratskhelia,0.9
-Lukaku,0.9
-Caprile,0.05
-Contini,0.01
-Juan Jesus,0.35
-Marin R.,0.3
-Olivera,0.6
-Gilmour,0.5
-Zerbin,0.2
-Folorunsho,0.3
-McTominay,0.6
-Neres,0.6
-Simeone,0.4
-Ngonge,0.25
-Raspadori,0.5
-Falcone,0.9
-Guilbert,0.9
-Baschirotto,0.9
-Gaspar K.,0.9
-Gallo,0.9
-Ramadani,0.9
-Pierret,0.85
-Dorgu,0.9
-Oudin,0.55
-Banda,0.6
-Krstovic,0.9
-Fruchtl,0.05
-Samooja,0.01
-Borbei,0.01
-Pelmard,0.2
-Jean,0.3
-Coulibaly L.,0.6
-Rafia,0.6
-Hasa,0.2
-Tete Morente,0.6
-Marchwinski,0.4
-Berisha M.,0.4
-Pierotti,0.5
-Rebic,0.5
-Burnete,0.1
-Suzuki,0.9
-Delprato,0.9
-Balogh,0.65
-Circati,0.9
-Coulibaly W.,0.9
-Sohm,0.9
-Bernabe',0.9
-Man,0.9
-Mihaila,0.55
-Cancellieri,0.55
-Bonny,0.9
-Chichizola,0.05
-Corvi,0.01
-Leoni,0.2
-Osorio,0.6
-Valenti,0.3
-Di Chiara,0.1
-Valeri,0.2
-Hernani,0.6
-Camara D.,0.5
-Hainaut,0.5
-Almqvist,0.6
-De Gea,0.7
-Martinez Quarta,0.85
-Pongracic,0.8
-Biraghi,0.65
-Dodo',0.85
-Cataldi,0.8
-Mandragora,0.9
-Gosens,0.9
-Colpani,0.9
-Sottil,0.55
-Kean,0.9
-Terracciano,0.05
-Martinelli T.,0.01
-Comuzzo,0.3
-Kayode,0.35
-Parisi,0.25
-Ranieri L.,0.4
-Moreno M.,0.15
-Adli,0.5
-Bove,0.6
-Richardson,0.4
-Ikone',0.5
-Beltran L.,0.4
-Gudmundsson A.,0.6
-Kouame',0.6
-Provedel,0.9
-Lazzari,0.8
-Gila,0.9
-Romagnoli,0.9
-Tavares N.,0.9
-Guendouzi,0.9
-Rovella,0.9
-Dele-Bashiru,0.55
-Isaksen,0.6
-Dia,0.8
-Zaccagni,0.9
-Mandas,0.05
-Furlanetto,0.01
-Marusic,0.5
-Patric,0.35
-Pellegrini Lu.,0.15
-Gigot,0.3
-Vecino,0.6
-Castrovilli,0.5
-Tchaouna,0.55
-Castellanos,0.25
-Noslin,0.6
-Pedro,0.2
+Ekong,0.3
+Pellegri,0.5
 Turati,0.9
 Izzo,0.9
 Mari',0.9
 Carboni A.,0.8
-Pereira P.,0.9
+Pereira P.,0.65
 Pessina,0.9
-Bondo,0.85
+Bianco,0.75
 Kyriakopoulos,0.9
-Maldini,0.8
+Maldini,0.9
 Caprari,0.55
 Djuric,0.9
 Pizzignacco,0.05
 Mazza,0.01
 Caldirola,0.5
-D'Ambrosio,0.3
-Valoti,0.15
-Sensi,0.4
-Bianco,0.6
-Forson O.,0.5
-Petagna,0.55
-Mota,0.6
+D'Ambrosio,0.35
+Birindelli,0.5
+Valoti,0.25
+Martins K.,0.15
+Bondo,0.6
+Forson O.,0.6
+Mota,0.55
 Maric,0.2
-Skorupski,0.8
-Posch,0.7
-Beukema,0.55
-Casale,0.75
-Miranda J.,0.8
-Aebischer,0.85
-Freuler,0.6
-Fabbian,0.6
-Orsolini,0.6
-Dallinga,0.55
-Karlsson,0.7
-Ravaglia F.,0.05
-Bagnolini,0.01
-De Silvestri,0.2
-Lykogiannis,0.4
-Erlic,0.35
-Lucumi',0.35
-Holm,0.25
-Pobega,0.6
-Iling Junior,0.5
-Urbanski,0.3
-Ndoye,0.6
-Moro N.,0.5
-Odgaard,0.4
-Castro S.,0.6
-Dominguez B.,0.2
 Svilar,0.9
 Mancini,0.9
-Hermoso,0.85
-N'Dicka,0.85
-El Shaarawy,0.6
-Kone' M.,0.9
+N'Dicka,0.8
+Angelino,0.8
+Celik,0.7
+Kone' M.,0.6
 Cristante,0.9
-Pellegrini Lo.,0.55
-Angelino,0.9
-Dybala,0.9
+El Shaarawy,0.6
+Dybala,0.85
+Pellegrini Lo.,0.85
 Dovbyk,0.9
 Ryan,0.05
 Marin Re.,0.01
 Sangare' B.,0.1
-Celik,0.6
-Hummels,0.5
-Abdulhamid,0.3
 Dahl,0.2
-Pisilli,0.55
+Hummels,0.4
+Hermoso,0.5
+Abdulhamid,0.4
 Baldanzi,0.6
-Paredes,0.4
-Shomurodov,0.4
-Soule',0.6
-Okoye,0.9
-Giannetti L.,0.55
-Bijol,0.9
-Kristensen T.,0.8
-Ehizibue,0.9
-Payero,0.55
-Karlstrom,0.85
-Lovric,0.8
-Kamara H.,0.9
-Thauvin,0.9
-Lucca,0.9
-Sava,0.05
-Padelli,0.01
-Kabasele,0.5
-Ebosse,0.25
-Toure' I.s.,0.3
-Abankwah,0.1
-Zemura,0.4
-Rui Modesto,0.35
-Atta,0.2
-Zarraga,0.4
-Ekkelenkamp,0.6
-Brenner,0.6
-Bravo,0.5
-Davis K.,0.6
-Pizarro,0.25
-Sommer,0.9
-Pavard,0.9
-Acerbi,0.9
-Bastoni,0.9
-Dumfries,0.55
-Barella,0.9
-Calhanoglu,0.9
-Mkhitaryan,0.85
-Dimarco,0.65
-Martinez L.,0.9
-Thuram,0.8
-Martinez Jo.,0.05
-Di Gennaro,0.01
-Palacios T.,0.15
-De Vrij,0.3
-Darmian,0.6
-Bisseck,0.35
-Carlos Augusto,0.55
-Asllani,0.35
-Frattesi,0.6
-Zielinski,0.5
-Correa,0.35
-Taremi,0.6
-Arnautovic,0.3
-Maignan,0.65
-Emerson Royal,0.65
-Tomori,0.9
-Pavlovic,0.9
-Hernandez T.,0.9
-Fofana Y.,0.9
-Reijnders,0.8
-Pulisic,0.9
-Loftus-Cheek,0.9
-Leao,0.9
-Morata,0.55
+Zalewski,0.1
+Paredes,0.5
+Pisilli,0.6
+Soule',0.55
+Shomurodov,0.35
+De Gea,0.8
+Martinez Quarta,0.6
+Comuzzo,0.8
+Biraghi,0.55
+Dodo',0.85
+Bove,0.8
+Cataldi,0.8
+Gosens,0.9
+Colpani,0.9
+Gudmundsson A.,0.9
+Kean,0.9
+Terracciano,0.05
+Martinelli T.,0.01
+Ranieri L.,0.5
+Kayode,0.25
+Parisi,0.3
+Moreno M.,0.15
+Adli,0.6
+Sottil,0.5
+Richardson,0.35
+Ikone',0.6
+Kouame',0.6
+Beltran L.,0.4
+Maignan,0.9
+Emerson Royal,0.6
+Gabbia,0.7
+Tomori,0.6
+Hernandez T.,0.85
+Pulisic,0.85
+Reijnders,0.85
+Fofana Y.,0.85
+Leao,0.85
+Morata,0.85
+Abraham,0.65
 Torriani,0.05
 Nava,0.01
-Gabbia,0.35
-Calabria,0.55
+Pavlovic,0.5
 Terracciano F.,0.3
-Bartesaghi,0.1
+Thiaw,0.25
 Jimenez A.,0.15
+Calabria,0.4
 Musah,0.6
 Zeroli,0.15
-Chukwueze,0.55
+Chukwueze,0.5
 Vos,0.1
+Loftus-Cheek,0.6
 Camarda,0.15
-Okafor,0.5
-Jovic,0.3
-Abraham,0.6
-Carnesecchi,0.9
-Djimsiti,0.7
-Hien,0.8
-Kolasinac,0.55
-Bellanova,0.9
-De Roon,0.8
-Ederson D.s.,0.8
-Ruggeri,0.65
-De Ketelaere,0.6
-Lookman,0.6
-Retegui,0.8
-Rui Patricio,0.05
-Rossi F.,0.01
-Kossounou,0.35
-Zappacosta,0.6
-Godfrey,0.2
-Palestra,0.15
-Cuadrado,0.4
-Pasalic,0.6
-Zaniolo,0.5
-Brescianini,0.6
-Sulemana I.,0.25
-Samardzic,0.6
-Cassa,0.1
-Manzoni,0.1
-Vlahovic V.,0.15
-Audero,0.8
-Iovine,0.6
-Kempf,0.9
-Goldaniga,0.8
-Moreno Alb.,0.9
-Sergi Roberto,0.9
-Perrone,0.85
-Strefezza,0.9
-Paz N.,0.6
-Fadera,0.6
-Cutrone,0.9
-Reina,0.05
-Vigorito,0.01
-Van Der Brempt,0.3
-Sala M.,0.2
-Dossena,0.35
-Mazzitelli,0.6
-Engelhardt,0.3
-Baselli,0.5
-Braunoder,0.35
-Verdi,0.5
-Da Cunha,0.6
-Jasim,0.15
-Gabrielloni,0.35
-Belotti,0.6
-Cerri,0.25
+Jovic,0.4
+Okafor,0.6
